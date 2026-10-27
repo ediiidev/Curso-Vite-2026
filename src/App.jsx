@@ -1,13 +1,41 @@
 import { useState } from "react";
 import heroImg from "./assets/hero.png";
 import reactLogo from "./assets/react.svg";
+import scrimbaLogo from "./assets/scrimba.png";
 import viteLogo from "./assets/vite.svg";
 import "./App.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import React from "react";
 
 function App() {
+  const greeting = import.meta.env.VITE_GREETING;
   const [count, setCount] = useState(0);
+  // Use this state variable in the UI
+  const [ipAddress, setIpAddress] = useState("");
+
+  React.useEffect(() => {
+    const fetchIpAddress = async () => {
+      // Use the environment variable here
+      const apiUrl = import.meta.env.VITE_API_URL;
+
+      try {
+        const response = await fetch(`${apiUrl}?format=json`);
+
+        if (!response.ok) {
+          throw new Error(`API error: ${response.status}`);
+        }
+
+        const data = await response.json();
+        setIpAddress(data.ip);
+      } catch (err) {
+        setIpAddress("NOT AVAILABLE");
+        console.log(err.message);
+      }
+    };
+
+    fetchIpAddress();
+  }, []);
 
   return (
     <>
@@ -17,9 +45,12 @@ function App() {
           <img src={heroImg} className="base" width="170" height="179" alt="" />
           <img src={reactLogo} className="framework" alt="React logo" />
           <img src={viteLogo} className="vite" alt="Vite logo" />
+          <img src={scrimbaLogo} className="scrimba" alt="Scrimba logo" />
         </div>
         <div>
           <h1>Get started</h1>
+          <h2>{greeting}</h2>
+          <h3>Your URL IP is: {ipAddress}</h3>
           <p>
             Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
           </p>
