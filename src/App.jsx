@@ -7,6 +7,7 @@ import "./App.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import React from "react";
+import LogoReact from "./assets/react.svg?react";
 
 function App() {
   const greeting = import.meta.env.VITE_GREETING;
@@ -47,6 +48,7 @@ function App() {
           <img src={viteLogo} className="vite" alt="Vite logo" />
           <img src={scrimbaLogo} className="scrimba" alt="Scrimba logo" />
         </div>
+        <LogoReact />
         <div>
           <h1>Get started</h1>
           <h2>{greeting}</h2>
