@@ -1,16 +1,35 @@
-# React + Vite
+# 🚀 Curso de Vite - Platzi - 2026
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+¡Bienvenido/a a mi repositorio! Aquí almaceno los ejercicios desarrollados como parte del **Curso de Vite.js** tomado en [Platzi](https://platzi.com/).
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠️ Tecnologías y Herramientas
 
-## React Compiler
+- **Vite**: Entorno de desarrollo frontend rápido y moderno.
+- **React**: Para el desarrollo de los ejercicios.
+- **Platzi**: Plataforma de aprendizaje.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the Oxlint configuration
+## 📂 Estructura del Repositorio
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+Este repositorio contiene diferentes lecciones y proyectos prácticos organizados por módulos o desafíos del curso:
+
+- Cada commit correspondiente refleja los avances y retos superados durante las clases interactivas.
+- Puedes cambiar a la rama `CursoPlatzi` para ver el código fuente exacto trabajado durante el curso:
+
+  ```bash
+  git checkout CursoPlatzi
+  ```
+
+  ## 🧠 Lecciones aprendidas
+
+Este repositorio contiene diferentes lecciones y proyectos prácticos organizados por módulos o desafíos del curso:
+
+- Cómo crear un proyecto con Vite.
+- Caracteristicas de Vite.
+- Muestra la forma de usar CSS, SaSS, modulos de CSS
+- Cómo configurar React, Vue.
+- Cómo usar variables de entorno con Vite.
+- Cómo usar plugins y configurarlo en el archivo vite.config.js
