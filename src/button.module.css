@@ -1,0 +1,8 @@
+.btn {
+  background-color: violet;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  background-color: orange;
+}
